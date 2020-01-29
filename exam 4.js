@@ -1,3 +1,15 @@
-var x = "ddsicncjxy3487437834643gghdsjhsdj43";
+let p = new Promise ((reject) => {
+    setTimeout(
+        () => {
+            let dro = new Date();
+            reject(dro);
+        },
+        20000
+    )
+});
 
-var k = x.replace(/([0-9]{4})([0-9]{5})/g , '###$2');
+
+p.catch(
+    reject =>{
+alert("rejected: "+ error);
+},
